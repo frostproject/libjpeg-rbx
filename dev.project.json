@@ -1,0 +1,19 @@
+{
+  "name": "libjpeg-rbx",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "libjpeg_rbx": {
+        "$className": "Folder",
+        "src": {
+          "$path": "src"
+        },
+        "roblox_packages": {
+          "$path": {
+            "optional": "roblox_packages"
+          }
+        }
+      }
+    }
+  }
+}

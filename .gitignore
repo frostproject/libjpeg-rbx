@@ -1,0 +1,22 @@
+# OS trash
+.DS_Store
+desktop.ini
+
+# Roblox files
+sourcemap.json
+*.rbxl.lock
+*.rbxlx.lock
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+.pesde
+luau_packages
+lune_packages
+roblox_packages
+
+# Visual studio code
+.vscode
+
+# Used to keep empty folders. Add an empty .gitkeep file to an empty folder you want to track
+!.gitkeep

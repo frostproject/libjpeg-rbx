@@ -1,0 +1,15 @@
+name: "Other"
+description: "Use this for more complex issues and requests"
+title: "Summarize your report"
+labels: ["status: evaluating"]
+body:
+  - type: markdown
+    attributes:
+      value: Write anything you want here
+  - type: textarea
+    attributes:
+      label: "Report"
+      description: "Please describe everything about the issue"
+      placeholder: "Detailed description of your report"
+    validations:
+      required: true

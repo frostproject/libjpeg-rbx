@@ -1,0 +1,67 @@
+name: "Bug Report"
+description: "Create a bug report"
+title: "Summarize your report"
+labels: ["status: evaluating", "type: bug"]
+assignees:
+  - iceeburr
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for the report, we will try to review it quickly!
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Please enter an explicit description of your issue"
+      placeholder: "Short and explicit description of your incident..."
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Reproduction Steps"
+      description: "Please describe how exactly you encountered it"
+      value: |
+        1. Go to ...
+        2. Click on ...
+        3. Scroll down to ...
+        4. See error
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: "Screenshots & Videos"
+      description: "If applicable, add any media files to help explain your problem"
+      placeholder: "https://imgur.com/a/abcdefg"
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: "Please copy and paste any relevant log output or attach an image"
+    validations:
+      required: false
+  - type: dropdown
+    id: os
+    attributes:
+      label: "Operating System"
+      description: "Which operating systems are affected?"
+      multiple: true
+      options:
+        - Windows
+        - MacOS
+        - Linux
+        - Other
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional Information"
+      description: "Include any additional information about the issue"
+    validations:
+      required: false

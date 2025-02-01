@@ -1,0 +1,25 @@
+name = "frostproject/libjpeg_rbx"
+version = "0.0.1"
+description = "A high-performance library for efficient JPEG image handling, designed specifically for Roblox and Luau"
+authors = ["iceeburr <iceeburr@gmail.com> (https://iceeburr.dev)"]
+repository = "https://github.com/frostproject/libjpeg-rbx"
+license = "MIT"
+private = true
+
+includes = ["pesde.toml", "README.md", "LICENSE", "src/**/*.luau"]
+
+[target]
+environment = "roblox"
+lib = "src/main.luau"
+build_files = ["src"]
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[scripts]
+roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
+sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
+
+[dev_dependencies]
+scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
+rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }

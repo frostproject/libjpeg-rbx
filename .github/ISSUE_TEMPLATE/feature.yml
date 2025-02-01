@@ -1,0 +1,47 @@
+name: "Feature Request"
+description: "Got a cool idea you want added? Share it here!"
+title: "Summarize your suggestion"
+labels: ["status: evaluating", "type: feature"]
+assignees:
+  - iceeburr
+body:
+  - type: markdown
+    attributes:
+      value: Let us know what's in your mind so we can discuss it
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Please enter an explicit description of your suggestion"
+      placeholder: "Short and explicit description of your suggestion..."
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: "Screenshots & Videos"
+      description: "If applicable, add any media files to help explain your suggestion"
+      placeholder: "https://imgur.com/a/abcdefg"
+    validations:
+      required: false
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "Platform"
+      description: "Which platforms do you think are best suited for your suggestion?"
+      multiple: true
+      options:
+        - Computer
+        - Mobile
+        - Controller
+        - Other
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional Information"
+      description: "Include any additional information about the suggestion"
+    validations:
+      required: false

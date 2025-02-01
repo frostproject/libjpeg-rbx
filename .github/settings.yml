@@ -1,0 +1,98 @@
+labels:
+  - name: "status: evaluating"
+    color: ff9900
+    description: "Applied to all new issues & PRs, someone needs to triage this"
+  - name: "status: stale"
+    color: ff9900
+    description: "There hasn't been any activity on this for quite some time"
+  - name: "status: blocked"
+    color: a6192e
+    description: "This is being blocked by other ongoing issues"
+  - name: "status: help-wanted"
+    color: ff9900
+    description: "We need some extra helping hands or expertise in order to resolve this"
+  - name: "status: discussion-needed"
+    color: ff9900
+    description: "This should be discussed first before proceeding"
+  - name: "status: investigating"
+    color: 04b34f
+    description: "This is currently being investigated and looked into"
+  - name: "status: incomplete"
+    color: a6192e
+    description: "Marks a PR or issue that is missing information"
+  - name: "status: duplicate"
+    color: a6192e
+    description: "This already exists"
+  - name: "status: wontfix"
+    color: a6192e
+    description: "This won't be worked on"
+  - name: "status: monitoring"
+    color: 0057b8
+    description: "This is still being monitored or tested"
+
+  - name: "type: bug"
+    color: 0052cc
+    description: "Something isn't working as expected"
+  - name: "type: enhancement"
+    color: 0052cc
+    description: "Enhancement of the code, not introducing new features"
+  - name: "type: feature"
+    color: 0052cc
+    description: "New feature, concept idea or suggestion"
+  - name: "type: docs"
+    color: 0052cc
+    description: "Changes in the project documentation or README"
+  - name: "type: dependencies"
+    color: 0052cc
+    description: "Updates or changes in project dependencies"
+  - name: "type: question"
+    color: 0052cc
+    description: "Further information is requested for discussion"
+  - name: "type: refactor"
+    color: 0052cc
+    description: "Improvement of existing code"
+  - name: "type: performance"
+    color: 0052cc
+    description: "Improvement of performance"
+  - name: "type: workflow"
+    color: 0052cc
+    description: "Improvement of workflow or github actions"
+  - name: "type: translation"
+    color: 0052cc
+    description: "Request for better localization"
+  - name: "type: maintenance"
+    color: 0052cc
+    description: "Generic maintenance tasks"
+
+  - name: "semver: major"
+    color: 0057b8
+    description: "This will cause a major bump in the version X.0.0"
+  - name: "semver: minor"
+    color: 0057b8
+    description: "This will cause a minor bump in the version 0.X.0"
+  - name: "semver: patch"
+    color: 0057b8
+    description: "This will cause a patch bump in the version 0.0.X"
+
+  - name: "priority: critical"
+    color: a6192e
+    description: "Must be reviewed immediately"
+  - name: "priority: high"
+    color: a6192e
+    description: "Needs some attention"
+  - name: "priority: medium"
+    color: ff9900
+    description: "May be useful in the future"
+  - name: "priority: low"
+    color: 04b34f
+    description: "Might get reviewed one day..."
+
+  - name: "breaking-changes"
+    color: a6192e
+    description: "This might break other parts of the code"
+  - name: "no-stale"
+    color: 0052cc
+    description: "This is exempted from the stale bot"
+  - name: "beginner-friendly"
+    color: 04b34f
+    description: "Good first issue for people wanting to contribute to the project"

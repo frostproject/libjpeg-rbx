@@ -1,0 +1,47 @@
+name: "Enhancement"
+description: "Report any inconsistencies that can be improved"
+title: "Summarize your suggestion"
+labels: ["status: evaluating", "type: enhancement"]
+assignees:
+  - iceeburr
+body:
+  - type: markdown
+    attributes:
+      value: Let us know what went wrong and what you want improved
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Please enter an explicit description of your suggestion"
+      placeholder: "Short and explicit description of your suggestion..."
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: "Screenshots & Videos"
+      description: "If applicable, add any media files to help explain your suggestion"
+      placeholder: "https://imgur.com/a/abcdefg"
+    validations:
+      required: false
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "Platform"
+      description: "Which platforms do you think are best suited for your suggestion?"
+      multiple: true
+      options:
+        - Computer
+        - Mobile
+        - Controller
+        - Other
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional Information"
+      description: "Include any additional information about the suggestion"
+    validations:
+      required: false
